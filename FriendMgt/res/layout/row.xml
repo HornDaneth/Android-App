@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ 
+    <LinearLayout 
+         android:layout_width="match_parent"
+	    android:layout_height="100dp"
+	    android:orientation="horizontal"
+	    android:background="#dedfdf"
+        >
+  
+
+           <TextView
+               android:id="@+id/txtCity"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Cambodia"
+               android:textAppearance="?android:attr/textAppearanceMedium"
+               android:textSize="@dimen/title_size" />
+
+           <TextView
+               android:id="@+id/txtTime"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="12 : 00 AM"
+               android:textSize="@dimen/time_size" />
+           
+          <RelativeLayout 
+      			android:layout_width="match_parent"
+      			android:layout_height="match_parent"  
+      			android:gravity="right"
+              >
+              <Button 
+               android:id="@+id/btn_edit"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="modify"
+            
+               />
+           <Button 
+               android:id="@+id/btn_delete"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="delete"
+               android:layout_below="@id/btn_edit"
+         
+               />
+      
+              
+          </RelativeLayout>
+            
+     
+    </LinearLayout>
+	
+    
+</LinearLayout>
